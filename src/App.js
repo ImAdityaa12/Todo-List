@@ -14,7 +14,7 @@ const App = () => {
   useEffect(()=> {
     filterHandler()
     saveLocalTodos()
-  },[todos, status])
+  },[todos, status, saveLocalTodos, filterHandler])
   const saveLocalTodos = () => {
     localStorage.setItem('todos', JSON.stringify(todos))
   }
